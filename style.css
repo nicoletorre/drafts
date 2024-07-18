@@ -1,0 +1,610 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #1D243D;
+    overflow-y: scroll;
+    margin: 0;
+
+}
+.homepage-background{
+    background: url('images/homepage_background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+   
+}
+.aboutme-background{
+    background-image: url('images/aboutme_background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px; 
+    position: sticky;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 4.5vh;
+    color: white; 
+    text-align: right;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #00BFFF; 
+}
+.hamburger{
+    display: none;
+}
+.active-link {
+    color: #00BFFF; /
+}
+/* .logo {
+    color: #FFB17A;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-left: -200px;
+    position: relative;
+} */
+
+.h1-text {
+    padding-left: 130px;
+    padding-top: 100px;
+    color: white;
+}
+p {
+    color: white;
+    font-size: 20px;
+    margin-left: 130px;
+}
+
+.h {
+    font-size: 40px;
+}
+
+.hello {
+    color: #FFB17A;
+    font-size: 50px;
+}
+
+.bsit {
+    font-size: 20px;
+    color: white;
+}
+
+.name {
+    font-size: 55px;
+}
+/* NICOLE TORRERO typing effect */
+#typed-name {
+    visibility: hidden;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { visibility: visible; }
+}
+#typed-name {
+    animation: typing 3s steps(20, end);
+    animation-fill-mode: forwards; 
+}
+.swipeRight {
+    animation: swipeRightAnimation 1s forwards;
+}
+
+/*effect for my educ and skills */
+/* about me part*/
+@keyframes swipeRightAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.slideUp {
+    opacity: 0;
+    transform: translateY(50px); /* Initial position, slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.slideUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pic {
+    float: right;
+    margin-right: 80px; 
+    margin-top: -260px;
+    width: 380px;
+    border-radius: 200px;
+}
+.btnn  {
+    border-radius: 40px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Itim', sans-serif;
+    width: 1100px;
+    padding: 8px;
+    margin-left: 130px;
+    border: 1px solid #00AFFA;
+    text-decoration: none;
+}
+
+.btnn:hover {
+    background-color: #00BFFF;
+}
+.logo2{
+    width: 45px;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+.logo3{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.logo4{
+    width: 50px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo2, .logo3, .logo4 {
+    transition: transform 0.3s ease-in-out;
+}
+.logo2:hover, .logo3:hover, .logo4:hover {
+    transform: scale(1.2);
+}
+.educ, .skills, .highschool{
+    margin-top: -9px;
+}
+
+/* about me section */
+.abtme{
+    margin-left: 605px;
+    top: 630px;
+    position: absolute;
+    font-family: 'Itim', sans-serif !important;
+    font-size: 25px;
+    color: white;
+
+}
+.aboutme {
+    font-family: 'Moul', sans-serif;
+    margin-left: 600px;
+    top: 680px;
+    position: absolute;
+}
+.about-pic {
+    width: 430px;
+    height: 430px;
+    border-radius: 20px;
+    position: absolute; 
+    left: 130px; 
+    top: 630px; /* Instead of margin-top */
+}
+.educ{
+    left: 580px;
+    font-size: 10px;
+    top: 260px;
+    position: absolute;
+}
+.skills{
+    left: 700px;
+    font-size: 10px;
+    top: 260px;
+    position: absolute;
+}
+.highschool, .senior-high, .senior-high1{
+    margin-left: 600px;
+    top: 280px;
+    position: relative;
+}
+.logo_html, .logo_css, .logo_js{
+    top: 270px;
+    position: relative;
+    width: 70px !important;
+    height: auto;
+}
+.logo_python, .logo_figma{
+    top: 270px;
+    position: relative;
+    width: 70px !important;
+    height: auto;
+}
+.date{
+    color: #FFB17A;
+}
+.educ_background {
+    width: 350px; 
+    height: 600px; 
+    margin-left: 650px; 
+    margin-top: -220px; 
+    border-radius: 20px;
+    background-size: cover; 
+    background-position: center; 
+}
+.logo_html{
+    width: 80px;
+    height: 80px;
+    margin-left: 590px;
+    border-radius: 1200px;
+}
+.logo_css{
+    width: 80px;
+    height: 80px;
+    margin-left: -10px;
+    border-radius: 1200px
+}
+.logo_js{
+    width: 100px;
+    height: 69px;
+    margin-left: -10px;
+    border-radius: 1200px;
+    margin-top: 10px;
+}
+.logo_python{
+    width: 80px;
+    margin-left: 600px;
+}
+
+.logo_figma{
+    width: 80px;
+    height: 70px;
+    margin-top: 10px !important;
+}
+
+.logo_html, .logo_css, .logo_js, .logo_python, .logo_figma{
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo_html:hover, .logo_css:hover, .logo_js:hover, .logo_python:hover, .logo_figma:hover{
+    transform: scale(0.7);
+}
+
+
+
+@media (max-width: 768px) {
+    .aboutme-background{
+        background: url('images/aboutme-background768px.png');
+        background-size: cover;
+        background-position: center;
+        height: 150vh; 
+        margin: 0; /* Remove default body margin */
+    }
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    nav {
+        justify-content: space-between; /* Adjust for hamburger menu placement */
+    }
+    nav .hamburger {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+    nav ul {
+        display: none; 
+        position: absolute;
+        top: 60px;
+        right: 20px; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        width: 200px;
+        flex-direction: column;
+        align-items: flex-end; 
+    }
+    nav ul.show-nav {
+        display: flex; 
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center; 
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+    /* .intro-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: center;
+        text-align: center; 
+        padding: 20px;
+    } */
+    .h1-text{
+        margin-left: -80px;
+        display: flex;
+    }
+    .bsit{
+        position: relative;
+        top: -25px;
+    }
+    .intro-text {
+        margin-left: 50px;
+        margin-top: -40px;
+        font-size: 20px;
+        white-space: normal; 
+        line-height: 1.5; 
+        max-width: 45% ; 
+    }
+    .typed-name{
+        font-size: 10px;
+    }
+    
+    .pic {
+        max-width: 280px; 
+        border-radius: 50%; 
+        margin-right: 10px;
+    }
+    
+    .btnn {
+        background-color: #00BFFF; 
+        color: #ffffff; 
+        font-size: 16px; 
+        padding: 10px 20px; 
+        border-radius: 25px; 
+        margin-top: 10px; 
+        margin-left: 40px;
+        width: 90px;
+        height: 20px;
+    }
+    .btnn:hover {
+        background-color: #009ACD; 
+    }
+    .logo2{
+        margin-left: 50px;
+    }   
+    .about-pic {
+        width: 280px; 
+        height: 280px;
+        margin-left: -50px; 
+        margin-top: -20px; 
+    }
+    .abtme{
+        top: 110px;
+        position: relative;
+        margin-left: 390px;
+    }
+    .aboutme {
+        font-size: 3vmin !important; 
+        line-height: 1.2;
+        margin-top: -580px;
+        margin-left: 390px !important;
+        position: relative;
+        max-width: 45%;
+    }
+    .educ{
+        margin-left: 350px;
+        font-size: 20px !important;
+    }
+    .highschool, .senior-high, .senior-high1{
+        top: 700px;
+        display: flex;
+        left: -200px;
+        white-space: nowrap;
+    }
+    .date{
+        left: 10px;
+        top: -10px;
+        position: absolute;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 425px) {
+    nav ul {
+        padding-top: 60px; 
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    h1, p {
+        padding-left: 10px;
+    }
+
+    .hello {
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .typed-name {
+        display: flex;
+        justify-content: left;
+        white-space: nowrap;
+        font-size: 4%;
+        margin-left: 10%;
+    }
+    .pic{
+        margin-top: 80px;
+        max-width: 70%;
+        right: 40px;
+        position: absolute;
+    }
+    .h1-text{
+        margin-top: 270px;
+        left: 50px;
+        position: absolute;
+        display: flex;
+    }
+    .hello{
+        font-size: 45px;
+    }
+    .intro-text {
+        margin-top: 500px;
+        position: absolute;
+        white-space: normal;
+        display: flex;
+        max-width: 75% ; 
+    }
+
+    #typed-name {
+        position: relative;
+        top: -5px;
+        font-size: 30px;
+        margin-left: -50px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+    }
+    
+    .bsit{
+        margin-top: 60px; 
+        left: 40px;
+    }
+    .btnn{
+        margin-top: 630px;
+        margin-left: 120px;
+        font-size: 15px;
+        white-space: nowrap;
+        position: absolute
+    }
+    .ellipsis-icon {
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        border: 2px solid white;
+        border-radius: 100px;
+        position: absolute;
+        top: 370px !important;
+        left: 10px;
+        
+    }
+    .logos {
+        display: none;
+        position: absolute;
+        top: 20px; 
+        right: 20px; 
+        flex-direction: column;
+        align-items: center;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        z-index: 100; 
+    }
+    .logo {
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .logo2, .logo3, .logo4{
+        top: 600px !important;
+        position: relative;
+        margin-right: -200px !important;
+        width: 40px; 
+    }
+    .reveal .logos {
+        display: flex;
+    }
+
+    /* about section */
+    .abtme{
+        left: -280px;
+        top: 760px;
+        position: absolute;
+    }
+    .about-pic{
+        width: 50%;
+        height: auto;
+        display: flex;
+        top: 835px;
+        left: 140px;
+    }
+    .aboutme{
+        margin-left: 50px !important;
+        top: 1595px;
+        max-width: 100%;
+        font-size: 13px !important; 
+        position: absolute;   
+    }
+    .logo_html{
+        margin-top: 840px;
+        left: -540px;
+        position: absolute;
+    }
+    .logo_css{
+        margin-top: 840px;
+        left: 120px;
+        position: absolute;
+
+    }
+    .logo_js{
+        margin-top: 845px;
+        left: 180px;
+        position: absolute;
+
+    }
+    .logo_python{
+        left: -550px;
+        top: 1200px;
+        position: absolute;
+    }
+    .logo_figma{
+        left: 120px;
+        top: 1190px;
+        position: absolute;
+    }
+
+    /* none */
+    .highschool{
+        position: absolute;
+        left: -550px;
+        top: 640px;
+        display: none;
+    }
+    .senior-high{
+        position: absolute;
+        left: -550px;
+        top: 680px;
+        display: none;
+    }
+    .senior-high1{
+        position: absolute;
+        left: -550px;
+        top: 740px;
+        display: none;
+    }
+    .date{
+        top: -1px;
+        position: absolute;
+    }
+
+    
+
+}
